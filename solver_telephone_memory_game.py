@@ -36,7 +36,7 @@ class TreeNode:
 
     def __len__(self):
         """Return total number of nodes in this tree/subtree."""
-        return 1 + sum(len(child) for child in self.children.values())
+        return self._size
 
 def initializeTreeNode(val: str):
     if len(val) < 1:
